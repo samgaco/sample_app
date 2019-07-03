@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
+
+
 ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -13,6 +16,10 @@ end
 group :production do 
   gem 'pg'
 end
+
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'rails-controller-testing'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
